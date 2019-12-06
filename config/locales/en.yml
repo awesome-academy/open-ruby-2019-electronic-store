@@ -61,5 +61,22 @@ en:
       recomment: "recommended items"
       price: "56$"
       number: "(50)"
+  page:
+    signup:
+      not_found: "Page not found"
+      success: "Create success"
+      title: "Sign up"
+      create: "Create an Account!"
+      form: "The form contains"
+      error: "Errors"
+      forgot: "Forgot Password?"
+      already: "Already have an account? Login!"
+  user:
+    new:
+      create: "Create my account"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirm: "Confirmation"
   english: "English"
   vietnam: "Vietnamese"
