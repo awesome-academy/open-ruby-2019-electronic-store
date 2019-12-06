@@ -1,0 +1,64 @@
+  <header id="header">
+  <div class="header_top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="contactinfo">
+            <ul class="nav nav-pills">
+              <li><%= link_to "#" do %>
+                <i class="fa fa-phone"></i> <%= t "header.info.phone" %>
+              <% end %>
+              </li>
+              <li><%= link_to "#" do %>
+                <i class="fa fa-envelope"></i> <%= t "header.info.email" %>
+              <% end %>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <%= render "layouts/icon" %>
+      </div>
+    </div>
+  </div>
+  
+  <div class="header-middle">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="logo pull-left">
+            <%= link_to "#" do %>
+              <%= image_tag Settings.image.home_image %>
+            <% end %>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="shop-menu pull-right">
+            <ul class="nav navbar-nav">
+              <li><%= link_to "#" do %>
+                <i class="fa fa-user"></i> <%= t "header.text.account" %>
+              <% end %>
+              </li>
+                <li><%= link_to "#" do %>
+              <i class="fa fa-star"></i> <%= t "header.text.wishlist" %>
+              <% end %>
+              </li>
+              <li><%= link_to "#" do %>
+                <i class="fa fa-crosshairs"></i> <%= t "header.text.checkout" %>
+              <% end %>
+              </li>
+              <li><%= link_to "#" do %>
+                <i class="fa fa-shopping-cart"></i> <%= t "header.text.cart" %>
+              <% end %>
+              </li>
+              <li><%= link_to "#" do %>
+                <i class="fa fa-lock"></i> <%= t "header.text.login" %>
+              <% end %>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= render "layouts/bottom" %>
+</header>
