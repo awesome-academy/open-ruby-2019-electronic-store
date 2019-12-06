@@ -1,0 +1,7 @@
+name:
+  maximum: 50
+email:
+  maximum: 255
+  valid_email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+|\.[a-z]+\z/i
+password:
+  minimum: 5
