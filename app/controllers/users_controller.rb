@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :load_user, only: :show
+  before_action :load_user, only: %i(show destroy)
 
   def show; end
 
@@ -11,11 +11,21 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
+      log_in @user
       flash[:success] = t "page.signup.success"
-      redirect_to root_path
+      redirect_to login_path
     else
       render :new
     end
+  end
+
+  def destroy
+    if @user.destroy
+      flash[:success] = t("page.delete.success")
+    else
+      flash[:danger] = t("page.delete.failed")
+    end
+    redirect_to users_path
   end
 
   private
