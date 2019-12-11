@@ -1,17 +1,11 @@
-<div class="col-sm-9 padding-right">
-  <div class="features_items">
-    <div class="col-sm-4">
-      <div class="product-image-wrapper">
-        <div class="single-products">
-          <div class="productinfo text-center">
-            <%= image_tag Settings.image.product1 %>
-            <h2><%= t "home.text.price" %></h2>
-            <p><%= t "home.text.text2" %></p>
-            <%= link_to "#", class:"btn btn-default add-to-cart" do %>
-              <i class="fa fa-shopping-cart"></i><%= t "home.text.text3" %>
-            <% end %>
-          </div>
-        </div>
+<div class="col-sm-4">
+  <div class="product-image-wrapper">
+    <div class="single-products">
+      <div class="productinfo text-center">
+        <%= image_tag Settings.image.product1 %>
+        <%= product.name %>
+        <%= product.decription %>
+        <%= product.quantity %>
       </div>
     </div>
   </div>
