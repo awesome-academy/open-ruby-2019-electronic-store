@@ -1,0 +1,26 @@
+<div id="slider-carousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="col-sm-6">
+        <h1><%= t "header.info.logo" %></h1>
+          <p><%= t "home.text.text1" %></p>
+          <%= link_to t("home.text.button1"), "#", class:"btn btn-default get" %>
+      </div>
+      <div class="col-sm-6">
+        <%= image_tag Settings.image.girl_image1, class: "girl img-responsive" %>
+        <%= image_tag Settings.image.pricing_image, class: "girl img-responsive" %>
+      </div>
+      </div>
+    <div class="item">
+      <div class="col-sm-6">
+        <h1><%= t "header.info.logo" %></h1>
+          <p><%= t "home.text.text1" %></p>
+          <%= link_to t("home.text.button1"), "#", class:"btn btn-default get" %>
+      </div>
+      <div class="col-sm-6">
+        <%= image_tag Settings.image.girl_image2, class: "girl img-responsive" %>
+        <%= image_tag Settings.image.pricing_image, class: "girl img-responsive" %>
+      </div>
+    </div>      
+  </div>
+</div>

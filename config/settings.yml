@@ -5,3 +5,12 @@ email:
   valid_email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+|\.[a-z]+\z/i
 password:
   minimum: 5
+image:
+  home_image: "home/logo.png"
+  girl_image1: "home/girl1.jpg"
+  girl_image2: "home/girl2.jpg"
+  pricing_image: "home/pricing.png"
+  shipping: "home/shipping.jpg"
+  product1: "home/product1.jpg"
+  recomment: "home/recommend3.jpg"
+  background: "home/searchicon.png"

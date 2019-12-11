@@ -1,0 +1,59 @@
+<div class="left-sidebar">
+  <h2><%= t "home.text.category" %></h2>
+    <div class="panel-group category-products" id="accordian">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <%= link_to "#", class: "dropdown-toggle", data: {toggle: "dropdown"} do %>
+              <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+              <%= t "home.text.camera" %>
+            <% end %>
+          </h4>
+        </div>
+        <div id="sportswear" class="panel-collapse collapse">
+          <div class="panel-body">
+            <ul>
+              <li><%= link_to t("home.text.ahd"), "#" %></li>
+              <li><%= link_to t("home.text.gadget"), "#" %></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <%= link_to "#", class: "dropdown-toggle", data: {toggle: "dropdown"} do %>
+              <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+              <%= t "home.text.security" %>
+            <% end %>
+          </h4>
+        </div>
+        <div id="mens" class="panel-collapse collapse">
+          <div class="panel-body">
+            <ul>
+              <li><%= link_to t("home.text.alarm"), "#" %></li>
+              <li><%= link_to t("home.text.timekeeper"), "#" %></li>
+              <li><%= link_to t("home.text.journey"), "#" %></li>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="brands_products">
+      <h2><%= t "home.text.brand" %></h2>
+      <div class="brands-name">
+        <ul class="nav nav-pills nav-stacked">
+          <li><%= link_to "#" do %>
+            <span class="pull-right"><%= t "home.text.number" %></span><%= t "home.text.bte" %>
+          <% end %>
+          <li><%= link_to "#" do %>
+            <span class="pull-right"><%= t "home.text.number" %></span><%= t "home.text.kiwi" %>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+
+  <div class="shipping text-center">
+    <%= image_tag Settings.image.shipping %>
+  </div>
+</div>
