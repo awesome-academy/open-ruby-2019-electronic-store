@@ -4,7 +4,7 @@
       <div class="col-sm-9">
         <div class="mainmenu pull-left">
           <ul class="nav navbar-nav collapse navbar-collapse">
-            <li><%= link_to t("header.text.home"), "#", class:"active" %></li>
+            <li><%= link_to t("header.text.home"), root_path, class:"active" %></li>
             <li class="dropdown"> 
               <%= link_to "#" do %>
                 <%= t "header.text.shop" %> <i class="fa fa-angle-down"></i>
@@ -31,7 +31,10 @@
       </div>
       <div class="col-sm-3">
         <div class="search_box pull-right">
-          <input type="text" placeholder="Search"/>
+          <%= form_tag search_index_path, method: :get do %>
+          <%= text_field_tag :form_search, params[:name], autocomplete: :off,
+            placeholder: t("header.text.search") %>
+          <% end %>
         </div>
       </div>
     </div>
