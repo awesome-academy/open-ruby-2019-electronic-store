@@ -2,7 +2,9 @@
   <div class="product-image-wrapper">
     <div class="single-products">
       <div class="productinfo text-center">
-        <%= image_tag Settings.image.product1 %>
+        <%= link_to product do %>
+          <%= image_tag Settings.image.product1 %>
+        <% end %>
         <%= product.name %>
         <%= product.decription %>
         <%= product.quantity %>
