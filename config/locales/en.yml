@@ -13,6 +13,7 @@ en:
       checkout: "Checkout"
       cart: "Cart"
       login: "Login"
+      signup: "Sign up"
       home: "Home"
       shop: "Shop"
       products: "Products"
@@ -71,6 +72,14 @@ en:
       error: "Errors"
       forgot: "Forgot Password?"
       already: "Already have an account? Login!"
+    login:
+      user: "User"
+      profile: "Profile"
+      logout: "Log out"
+      invalid: "Invalid email/password combination"
+    delete:
+      success : "User deleted"
+      failed : "User no deleted"
   user:
     new:
       create: "Create my account"
@@ -78,5 +87,13 @@ en:
       email: "Email"
       password: "Password"
       confirm: "Confirmation"
+    login:
+      title: "Log in"
+      email: "Email"
+      password: "Password"
+      remember: "Remember me"
+      text: "Remember me on the computer"
+      text1: "New user?"
+      sign: "Sign up now"
   english: "English"
   vietnam: "Vietnamese"

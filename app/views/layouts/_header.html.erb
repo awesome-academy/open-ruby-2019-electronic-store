@@ -1,4 +1,4 @@
-  <header id="header">
+<header id="header">
   <div class="header_top">
     <div class="container">
       <div class="row">
@@ -33,13 +33,24 @@
         </div>
         <div class="col-sm-8">
           <div class="shop-menu pull-right">
-            <ul class="nav navbar-nav">
-              <li><%= link_to "#" do %>
-                <i class="fa fa-user"></i> <%= t "header.text.account" %>
-              <% end %>
+            <ul class="nav navbar-nav ">
+              <li class="dropdown"> 
+                <%= link_to "#" do %>
+                  <i class="fa fa-user"></i> <%= t "header.text.account" %>
+                <% end %>
+                <ul role="menu" class="sub-menu-1">
+                  <% if logged_in? %>
+                    <li><%= link_to current_user.name, "#" %></li>
+                    <li><%= link_to t("page.login.profile"), current_user %></li>
+                    <li><%= link_to t("page.login.logout"), logout_path, method: :delete %></li>
+                  <% else %>
+                    <li><%= link_to t("header.text.signup"), signup_path %></li>
+                    <li><%= link_to t("header.text.login"), login_path %></li>
+                  <% end %>
+                </ul>
               </li>
-                <li><%= link_to "#" do %>
-              <i class="fa fa-star"></i> <%= t "header.text.wishlist" %>
+              <li><%= link_to "#" do %>
+                <i class="fa fa-star"></i> <%= t "header.text.wishlist" %>
               <% end %>
               </li>
               <li><%= link_to "#" do %>
@@ -50,7 +61,7 @@
                 <i class="fa fa-shopping-cart"></i> <%= t "header.text.cart" %>
               <% end %>
               </li>
-              <li><%= link_to "#" do %>
+              <li><%= link_to login_path do %>
                 <i class="fa fa-lock"></i> <%= t "header.text.login" %>
               <% end %>
               </li>
