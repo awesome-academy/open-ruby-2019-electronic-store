@@ -1,0 +1,15 @@
+<div class="col-sm-4">
+  <div class="user-image-wrapper">
+    <div class="single-products">
+      <div class="text-center">
+        <%= link_to user.name, user %>
+        </br>
+        <%= user.email %>
+        <% if current_user.admin? && !current_user?(user) %>
+          <%= link_to t("user.index.delete"), user, method: :delete,
+          data: { confirm: t("user.index.confirm") } %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

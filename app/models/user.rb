@@ -4,7 +4,7 @@ class User < ApplicationRecord
   
   has_many :bills, dependent: :destroy
   has_many :rates, dependent: :destroy
-  has_many :news, dependent: :destroy
+  has_many :news
   has_many :comments, dependent: :destroy
 
   validates :name, presence: true, length: {maximum: Settings.name.maximum}

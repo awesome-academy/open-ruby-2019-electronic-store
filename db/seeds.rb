@@ -22,3 +22,17 @@ brands = Brand.order(:created_at).take(6)
     Product.create!(name: name, decription: decription, quantity: quantity, brand_id: n, category_id: n) 
   end
 end
+
+User.create!(name: "Admin", email: "admin@gmail.com",
+  password: "123456", 
+  password_confirmation: "123456",
+  admin: true)
+
+30.times do |n|
+  name = FFaker::Name.name
+  email = "admin-#{n+1}@gmail.com"
+  password = "admin"
+  User.create!(name: name, email: email,
+    password: password, 
+    password_confirmation: password)
+end
