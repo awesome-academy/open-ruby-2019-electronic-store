@@ -9,6 +9,9 @@ gem "bootstrap-sass"
 gem "jquery-rails"
 gem "bcrypt"
 gem "config"
+gem "ffaker"
+gem "kaminari"
+gem "bootstrap-kaminari-views"
 gem "puma", "~> 4.1"
 gem "sass-rails", ">= 6"
 gem "webpacker", "~> 4.0"
@@ -18,7 +21,7 @@ gem "jbuilder", "~> 2.7"
 gem "bootsnap", ">= 1.4.2", require: false
 
 group :development, :test do
-  gem "pry-rails"
+  gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do

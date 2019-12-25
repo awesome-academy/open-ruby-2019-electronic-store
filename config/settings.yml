@@ -15,3 +15,6 @@ image:
   recomment: "home/recommend3.jpg"
   background: "home/searchicon.png"
 checked_remember: 1
+pages:
+  page_number: 6
+  theme: "twitter-bootstrap-3"

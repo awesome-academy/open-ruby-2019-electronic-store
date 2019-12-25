@@ -14,7 +14,11 @@
       <div class="col-sm-3">
         <%= render "products/sidebar" %>
       </div>
-      <%= render "products/product" %>
+      <div class="col-sm-9 padding-right">
+        <div class="features_items">
+        <%= render @products %>
+        <%= paginate @products, theme: Settings.pages.theme %>
+      </div>
     </div>
   </div>
 </section>

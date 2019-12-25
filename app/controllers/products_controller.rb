@@ -1,3 +1,5 @@
 class ProductsController < ApplicationController
-  def home; end
+  def index
+    @products = Product.page(params[:page]).per Settings.pages.page_number
+  end
 end
