@@ -9,4 +9,6 @@ Rails.application.routes.draw do
 
   resources :users
   resources :products, only: %i(index show)
+  resources :categories, only: %i(index show)
+  resources :search, only: :index
 end

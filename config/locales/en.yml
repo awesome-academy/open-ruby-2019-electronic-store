@@ -25,6 +25,7 @@ en:
       single_blog: "Blog Single"
       not_found: "404"
       contact: "Contact"
+      search: "Search"
   footer:
     text:
       text1: "Copyright © 2019 BinhAnSi Inc. All rights reserved."
@@ -86,6 +87,9 @@ en:
     delete:
       success : "User deleted"
       failed : "User no deleted"
+  search:
+    index:
+      title: "Products"
   user:
     new:
       create: "Create my account"
@@ -101,5 +105,8 @@ en:
       text: "Remember me on the computer"
       text1: "New user?"
       sign: "Sign up now"
+    show:
+      name: "Name: "
+      email: "Email: "
   english: "English"
   vietnam: "Vietnamese"

@@ -59,11 +59,39 @@ input {
   }
 }
 
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 25px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}
+
 .field_with-errors {
   @extend .has-error;
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.product-information .price_number {
+  font-size: 30px;
+  color: $medium-oranger;
+}
+
+.product-information label {
+  margin-left: 30px;
+}
+
+.product-information input {
+  width: 40px;
+  text-align: center;
 }
 
 a:hover {
@@ -289,7 +317,8 @@ a#scrollUp i{
 
 .mainmenu ul li a:hover, .mainmenu ul li a.active,  .shop-menu ul li a.active{
 	background:none;
-	color: $medium-oranger;
+  color: $medium-oranger;
+  font-weight: 600;
 }
 
 .search_box input {
@@ -297,9 +326,9 @@ a#scrollUp i{
   border: medium none;
   color: $medium-gray;
   font-family: 'roboto';
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
-  height: 35px;
+  height: 40px !important;
   outline: medium none;
   padding-left: 10px;
   width: 155px;
@@ -378,6 +407,11 @@ ul.sub-menu-1 {
 
 .navbar-nav li ul.sub-menu-1 li{
   padding: 10px 20px 0;
+}
+
+.navbar-nav li ul.sub-menu-1 .username{
+  padding: 10px 20px 0;
+  color: $smart-oranger;
 }
 
 .navbar-nav li ul.sub-menu li:last-child{
