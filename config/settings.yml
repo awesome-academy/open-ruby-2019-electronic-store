@@ -14,6 +14,11 @@ image:
   product1: "home/product1.jpg"
   recomment: "home/recommend3.jpg"
   background: "home/searchicon.png"
+  similar1: "product-details/similar1.jpg"
+  similar2: "product-details/similar2.jpg"
+  rating: "product-details/rating.png"
+  new: "product-details/new.jpg"
+  share: "product-details/share.png"
 checked_remember: 1
 pages:
   page_number: 6

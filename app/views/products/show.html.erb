@@ -1,0 +1,42 @@
+<div class="product-details">
+  <div class="col-sm-5">
+    <div class="view-product">
+      <%= image_tag Settings.image.product1 %>
+        <h3><%= t "product.product_detail.text" %></h3>
+      </div>
+      <div id="similar-product" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="item active">
+          <%= image_tag Settings.image.similar1 %>
+          <%= image_tag Settings.image.similar2 %>
+          <%= image_tag Settings.image.similar1 %>
+        </div>
+      </div>
+      <%= link_to "#similar-product", class: "left item-control", data: {slide: "prev"} do %>
+        <i class="fa fa-angle-left"></i>
+      <% end %>
+      <%= link_to "#similar-product", class: "right item-control", data: {slide: "next"} do %>
+        <i class="fa fa-angle-right"></i> 
+      <% end %> 
+    </div>
+  </div>
+  <div class="col-sm-7">
+    <div class="product-information">
+    <%= image_tag Settings.image.new %>
+      <h2><%= @product.name %></h2>
+      <%= image_tag Settings.image.rating %>
+      <span><%= t "home.text.price_number" %></span>
+      <label><%= t "product.product_detail.quantity" %></label>
+      <input type="text" value="3" />
+        <%= link_to "#", class: "btn btn-fefault cart" do %>
+          <i class="fa fa-shopping-cart"></i>
+          <%= t "home.text.text3" %>
+        <% end %>
+        <p><b><%= t "product.product_detail.category" %></b><%= @product.category.name %></p>
+        <p><b><%= t "product.product_detail.brand" %></b><%= @product.brand.name %></p>
+      <%= link_to "#" do %>
+        <%= image_tag Settings.image.share, class: "share img-responsive" %>
+      <% end %>
+    </div>
+  </div>
+</div>

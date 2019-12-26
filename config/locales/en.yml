@@ -60,8 +60,14 @@ en:
       price: "Price Range"
       item: "Features Items"
       recomment: "recommended items"
-      price: "56$"
+      price_number: "56$"
       number: "(50)"
+  product:
+    product_detail:
+      text: "ZOOM"
+      quantity: "Quantity: "
+      category: "Category: "
+      brand: "Brand: "
   page:
     signup:
       not_found: "Page not found"
