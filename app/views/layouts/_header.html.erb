@@ -61,10 +61,13 @@
                 <i class="fa fa-shopping-cart"></i> <%= t "header.text.cart" %>
               <% end %>
               </li>
-              <li><%= link_to login_path do %>
-                <i class="fa fa-lock"></i> <%= t "header.text.login" %>
+              <% unless logged_in? %>
+                <li>
+                  <%= link_to login_path do %>
+                    <i class="fa fa-lock"></i> <%= t "header.text.login" %>
+                  <% end %>
+                </li>
               <% end %>
-              </li>
             </ul>
           </div>
         </div>

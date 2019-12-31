@@ -18,4 +18,11 @@ class ApplicationController < ActionController::Base
     flash[:danger] = t "page.signup.not_found"
     redirect_to root_path
   end
+
+  def logged_in_user
+    return if logged_in?
+    
+    flash[:danger] = t "page.login.please"
+    redirect_to login_url
+  end
 end

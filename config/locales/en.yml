@@ -17,8 +17,6 @@ en:
       home: "Home"
       shop: "Shop"
       products: "Products"
-      checkout: "Checkout"
-      cart: :Cart
       login: "Login"
       blog: "Blog"
       list_blog: "Blog List"
@@ -84,13 +82,20 @@ en:
       profile: "Profile"
       logout: "Log out"
       invalid: "Invalid email/password combination"
+      please: "Please login"
     delete:
-      success : "User deleted"
-      failed : "User no deleted"
+      success: "User deleted"
+      failed: "User no deleted"
+    update:
+      success: "Update success"
+      failed: "Update failed"
   search:
     index:
       title: "Products"
   user:
+    index:
+      delete: "Delete"
+      confirm: "Are you sure want delete user"
     new:
       create: "Create my account"
       name: "Name"
@@ -104,9 +109,19 @@ en:
       remember: "Remember me"
       text: "Remember me on the computer"
       text1: "New user?"
+      text2: "You has login"
       sign: "Sign up now"
     show:
       name: "Name: "
       email: "Email: "
+    edit:
+      title: "Edit user"
+      content: "Update your profile"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirm: "Confirmation"
+      save: "Save changes"
+      change: "Change"
   english: "English"
   vietnam: "Vietnamese"
